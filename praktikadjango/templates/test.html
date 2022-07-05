@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gsggs</title>
+</head>
+<body>
+{% for person in persons %}
+    <h1>full name: {{ person.full_name }}</h1>
+    <h5>id: {{ person.id }}</h5>
+    {% for pet in person.pets.all %}
+        <p>id: {{ pet.id }}</p>
+        <p>pet name: {{ pet.name }}</p>
+        {%endfor%}
+    {%endfor%}
+
+{% for pet in pets %}
+    <h1>pet id: {{ pet.full_name }}</h1>
+    <h5>pet name: {{ pet.id }}</h5>
+    <p>owner name: {{ pet.owner.full_name }}</p>
+    <p>owner id: {{ pet.owner.id }}</p>
+    {%endfor%}
+</body>
+</html>

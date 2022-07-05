@@ -1,8 +1,13 @@
 from django.contrib import admin
 
-from .models import Myfirst
+from .models import *
 
-@admin.register(Myfirst)
-class Myfirst(admin.ModelAdmin):
+
+@admin.register(Person)
+class PersonAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Pet)
+class PetAdmin(admin.ModelAdmin):
     pass
 
