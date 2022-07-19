@@ -11,3 +11,10 @@ class PersonAdmin(admin.ModelAdmin):
 class PetAdmin(admin.ModelAdmin):
     pass
 
+@admin.register(PetType)
+class PetType(admin.ModelAdmin):
+    pass
+
+@admin.register(Home)
+class HomeAdmin(admin.ModelAdmin):
+    pass

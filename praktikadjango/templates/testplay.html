@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for person in houses %}
+    <h1>address: {{ home.address }}</h1>
+    {% for person in home.persons.have_pets %}
+        <h3>id: {{ person.full_name }}</h3>
+        {% for person in persons.pets.all %}
+            {% if pet in home.pets.all %}
+                <h5>{{ pet.name }}</h5>
+                <p>{{ pet.type }}</p>
+       {%endfor%}
+    {%endfor%}
+{%endfor%}
+</body>
+</html>
